@@ -1,0 +1,35 @@
+@media only screen and (min-width:0px) and (max-width: 1000px){
+
+  footer{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position:static;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+  .fotosIndex {
+      @extend section ;
+      position: relative;
+      align-content:center;
+    }
+  }
+  .asideVideos {
+    overflow: hidden;
+    position:relative;
+    width: 100%;
+  }
+  } 
+ 
