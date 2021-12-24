@@ -34,7 +34,6 @@ p {
     padding: 20px;
   }
 
-
   @mixin grid-center-width {
     display: grid;
     align-items: center;
@@ -44,13 +43,12 @@ p {
   .fotosIndex {
     @include grid-center-width;
   }
-
-  @mixin img-border($color, $width) {
-    border: {
-      color: $color;
-      width: $width;
-      style: dashed;
-    }
+  .parallax {
+    background-image: url("/photos/mate.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
-.fotosIndex { @include img-border(rgb(9, 9, 14), 5px); }

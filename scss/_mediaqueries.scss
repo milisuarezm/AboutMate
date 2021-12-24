@@ -19,17 +19,26 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+  }
+    .pasos {
+      display: flex;
+      flex-direction: column;
+      position:static;
+      width: 100%;
+      height: 100%;
+      font-size: small;
+      text-align: center;
     
+  }    
   .fotosIndex {
       @extend section ;
       position: relative;
       align-content:center;
+
     }
   }
-  .asideVideos {
+  .asideVideos { 
     overflow: hidden;
     position:relative;
     width: 100%;
   }
-  } 
- 
