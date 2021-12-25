@@ -167,3 +167,6 @@ footer {
   overflow: hidden;
   position: relative;
   width: 100%; }
+
+.form-control {
+  max-width: 90%; }
