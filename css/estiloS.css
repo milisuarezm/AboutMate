@@ -41,6 +41,14 @@ p {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.submit {
+  width: 100px;
+  margin: 50px 50px;
+  color: black; }
+
+.form-control {
+  width: 500px; }
+
 nav {
   font-family: "Shippori Antique B1", sans-serif;
   font-size: large; }
