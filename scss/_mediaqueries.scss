@@ -5,11 +5,6 @@
   font-size: 12px;
   }
 
-  .imagenInsta .imagenFace {
-    width: 50%
-    
-  }
-
   aside {
     display: flex;
     flex-direction: column;
@@ -26,7 +21,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 25px;
+    padding: 5px;
     width: 350px;
     height: 200px;
     
@@ -37,8 +32,8 @@
       position:static;
       width: 80%;
       height: 100%;
-      font-size: 18px;
-      text-align: center;
+      font-size: 15px;
+      text-align: justify;
     
   }    
 }

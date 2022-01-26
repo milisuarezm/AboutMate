@@ -10,7 +10,9 @@ html {
 }
 
 p {
-  margin-left: 20px;
+  margin: 30px 10px;
+  text-align:justify;
+
 }
 
 .portada {
@@ -21,10 +23,12 @@ p {
 }
 
 .links a {
-  color: $color-verde;
   text-decoration: none;
+  list-style: none;
+  color: $color-verde;
   font-weight: 600;
   margin-bottom: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -42,7 +46,17 @@ p {
 
   .fotosIndex {
     @include grid-center-width;
+    margin: 30px 0px 20px 20px;
   }
+  
+  .estiloParallax {
+    height:500px;
+    background-color:#648069;
+    font-size:70px;
+    text-align:center;
+    padding:100px;
+  }
+  
   .parallax {
     background-image: url("/photos/mate.jpg");
     height: 500px;
@@ -52,12 +66,6 @@ p {
     background-size: cover;
   }
   
-  .submit {
-    width: 100px;
-    margin: 50px 50px;
-    color: $black;
-  }
 
-  .form-control {
-    width: 500px;
-  }
+
+ 
