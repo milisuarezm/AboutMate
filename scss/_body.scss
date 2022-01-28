@@ -27,21 +27,54 @@ h2:hover {
     margin: 20px;
   }
 
-  
-.pasos{
-  width: 100%;
-  height: 100%;
-  margin-left: 50px;
-
-}
+  h3 {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+  }
 
 .fotoPasos {
-border-radius: 50%;
-display: flex;
-justify-content: center;
-height: 100px;
-width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+
+  &:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.3);
+  overflow: hidden;
+  transition: transform 2s;
+  }
 }
+
+.pasos {
+  width: 95%;
+  height: 100%; 
+  margin-left: 20px;
+  text-align:left;
+}
+
+
+
+
+   /* 
+.fotoPasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.pasos{
+width: 95%;
+  height: 100%; 
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+} */
   
 .listaBeneficio li {
     margin-left: 100px;
@@ -50,7 +83,7 @@ width: 100px;
   }
 
 .section {
-    width: 80%;
+    width: 95%;
     margin-left: 20px;
     text-align: center;
   }

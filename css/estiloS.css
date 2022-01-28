@@ -100,25 +100,54 @@ h2 {
   font-family: "Shippori Antique B1", sans-serif;
   margin: 20px; }
 
-.pasos {
-  width: 100%;
-  height: 100%;
-  margin-left: 50px; }
+h3 {
+  margin: 30px;
+  display: flex;
+  justify-content: center; }
 
 .fotoPasos {
   border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 40px; }
+  .fotoPasos:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+    overflow: hidden;
+    transition: transform 2s; }
+
+.pasos {
+  width: 95%;
+  height: 100%;
+  margin-left: 20px;
+  text-align: left; }
+
+/* 
+.fotoPasos {
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   height: 100px;
-  width: 100px; }
+  width: 100px;
+}
 
+.pasos{
+width: 95%;
+  height: 100%; 
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+} */
 .listaBeneficio li {
   margin-left: 100px;
   list-style-type: circle;
   padding-top: 10px; }
 
 .section {
-  width: 80%;
+  width: 95%;
   margin-left: 20px;
   text-align: center; }
 
@@ -160,7 +189,7 @@ h2 {
 
 footer {
   width: 100%;
-  height: 50%;
+  height: auto;
   background-color: #cde5d7;
   background-image: linear-gradient(to bottom, #a7cab3, #86a784);
   color: black;
@@ -176,26 +205,116 @@ footer {
     margin-left: 10px;
     display: grid; }
 
-@media only screen and (min-width: 0px) and (max-width: 1000px) {
-  footer {
-    flex: 1 50%;
-    font-size: 12px; }
-  aside {
-    display: flex;
-    flex-direction: column;
-    color: grey; }
-  section {
-    display: flex;
-    flex-direction: column;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100%; }
+
+/* 
+Dispositivo = Desktops
+
+*/
+@media (min-width: 1281px) {
+  main {
     width: 100%;
-    height: auto; }
+    height: 100%; }
+  section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; }
+  aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .portada {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    background-image: url("/photos/fotoportada.jpg"); }
   .fotosIndex {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 5px;
-    width: 350px;
-    height: 200px; }
+    margin-left: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px; }
+  .fotosAbout {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px; }
+  .asideVideos {
+    width: 600px;
+    height: 600px; }
+  .parallax {
+    background-image: url("/photos/mate.jpg");
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .listaBeneficio {
+    width: 80%;
+    text-align: justify; }
+  .container {
+    width: 60%;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center; }
+  .submit {
+    width: 10%;
+    display: flex;
+    align-items: center; } }
+
+/* 
+Dispositivo = Tablets, Ipads // nest hub
+
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 100%;
+    height: 100%; }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    height: 100%; }
+  nav {
+    width: 100%;
+    font-size: 12px; }
+  p {
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 15px; }
+  .parallax {
+    background-image: url("/photos/mate.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .portada {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    background-image: url("/photos/fotoportada.jpg"); }
+  .listaBeneficio {
+    width: 80%;
+    text-align: justify; }
+  .asideVideos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
   .pasos {
     display: flex;
     flex-direction: column;
@@ -203,12 +322,79 @@ footer {
     width: 80%;
     height: 100%;
     font-size: 15px;
-    text-align: justify; } }
+    text-align: justify; }
+  .fotosIndex {
+    display: flex;
+    border-radius: 5px; }
+  .container {
+    width: 60%;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px; }
+  .submit {
+    width: 20%;
+    height: auto;
+    margin-left: 14em; } }
 
-.asideVideos {
-  overflow: hidden;
-  position: relative;
-  width: 100%; }
-
-.form-control {
-  max-width: 90%; }
+/*
+Dispositivo =   Iphone xr */
+@media only screen and (min-width: 320px) and (max-width: 680px) {
+  main {
+    width: 100%;
+    height: 100%; }
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  p {
+    width: 100%;
+    text-align: justify; }
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a a ." "b b .";
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; }
+    footer img {
+      height: 30px;
+      width: 30px; }
+  .contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px; }
+  .submit {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-small; }
+  .parallax {
+    display: none; }
+  .portada {
+    height: 100%;
+    width: 100%; }
+  .asideVideos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .listaBeneficio {
+    width: 80%;
+    text-align: justify; }
+  .fotosIndex {
+    display: none; } }
